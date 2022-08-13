@@ -80,7 +80,7 @@ class SystemStatsSubscriber(object):
 
                 status["swap_memory_percent"] = swap_memory.percent
                 status["Running Services"] = get_running_processes()
-                status["USB"] = get_usb()
+                # status["USB"] = get_usb()
             except Exception as e:
                 traceback.print_exc()
 

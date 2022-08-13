@@ -185,7 +185,7 @@ class ROSBoardNode(object):
                 if topic_name == "_system_stats":
                     if topic_name not in self.local_subs:
                         rospy.loginfo("Subscribing to _system_stats [non-ros]")
-                        self.local_subs[topic_name] = SystemStatsSubscriber(self.on_system_stats)
+                        self.local_subs[topic_name] = SystemStatsSubscriber(self.on_system_stats, "wlp3s0")
                     continue
 
                 if topic_name == "_top":

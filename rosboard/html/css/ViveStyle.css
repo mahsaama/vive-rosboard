@@ -1,0 +1,267 @@
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.mainCard {
+  width: 800px;
+  height: 600px;
+  background-color: rgb(122, 119, 119);
+  border-radius: 15px;
+  float: right;
+}
+
+.storage {
+  display: flex;
+}
+
+.cardHeader {
+  height: 60px;
+  width: 100%;
+  background-color: #3b3939;
+  align-items: center;
+}
+
+.closeBtn {
+  font-size: 20px;
+  color: white;
+  margin: 20px;
+  float: right;
+}
+
+.cardTitle {
+  font-size: 16;
+  color: white;
+  margin-left: 20px;
+}
+
+.CardBody {
+  height: 100%;
+  width: 100%;
+  background:#303030;
+  color:#808080;
+  box-shadow:3pt 3pt 3pt rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+
+.viveBtn {
+  width: 80px;
+  height: 30px;
+  background-color: aqua;
+  border-radius: 10px;
+}
+
+.textContentArea {
+  width: 80%;
+  height: 370px;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.setectorArea {
+  width: 80%;
+  height: 30px;
+}
+
+.selector {
+  width: 70%;
+  height: 100%;
+}
+
+
+/* Style the tab */
+.tab {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.viveTab {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.commandArea {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.bashView {
+  width: 80%;
+  height: 400px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+}
+
+.commandView {
+  width: 80%;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.commandArea {
+  width: 80%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timeSelectArea {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.timeProgress {
+  display: flex;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mar-1 {
+  margin: 10px;
+}
+
+.timeValue {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.timeBtnArea {
+  width: 160px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.tennisBall {
+  position: absolute;
+  color: yellow;
+  font-size: small;
+}
+
+.footerStyle {
+  height: 50px;
+  width: 100%;
+  flex-shrink: 0;
+  background-color: #3F51B5;
+}
+
+.hostSelect{
+  width: 100px;
+  height: 30px;
+  margin: 20px;
+}
